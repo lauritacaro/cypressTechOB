@@ -6,7 +6,8 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:report": "mochawesome-merge --reportDir ./cypress/results > mochawesome.json"
+    "cypress:report": "mochawesome-merge 'cypress/results/mochawesome*.json' > cypress/results/results.json",
+    "cypress:report:html": "marge cypress/results/results.json"
   },
   "author": "",
   "license": "ISC",

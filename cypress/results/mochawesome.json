@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-02-22T19:22:20.235Z",
-    "end": "2023-02-22T19:22:25.998Z",
-    "duration": 5763,
+    "start": "2023-02-22T20:06:03.760Z",
+    "end": "2023-02-22T20:06:09.340Z",
+    "duration": 5580,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bc55609a-8e0a-42f3-a48b-77135cb2a2a2",
+      "uuid": "3eb427a5-baf2-459e-b07a-1105cc0bb5da",
       "title": "",
       "fullFile": "cypress\\e2e\\pruebita.cy.js",
       "file": "cypress\\e2e\\pruebita.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3d3a6680-b79a-4e75-b3a2-31af0d7848e2",
+          "uuid": "7490c075-cdec-4738-ad27-42dc25368423",
           "title": "Test case to search something",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Search Apple",
               "fullTitle": "Test case to search something Search Apple",
               "timedOut": null,
-              "duration": 3942,
+              "duration": 3800,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://google.es');\ncy.get('[id=\"L2AGLb\"]').click();\ncy.get('input[name=\"q\"]').type(\"Apple{enter}\");\ncy.get('#result-stats').then($element => {\n  const txt = $element.text();\n  const numtxt = txt.replace(/\\D/g, \"\");\n  const num = Number(numtxt);\n  expect(num).to.be.greaterThan(100000);\n  expect(num).to.not.be.lessThan(10000);\n});",
               "err": {},
-              "uuid": "d2eaf9dc-a69f-4236-93e8-db7507be7162",
-              "parentUUID": "3d3a6680-b79a-4e75-b3a2-31af0d7848e2",
+              "uuid": "860981b1-ef1b-4b68-8241-a304a773b4aa",
+              "parentUUID": "7490c075-cdec-4738-ad27-42dc25368423",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d2eaf9dc-a69f-4236-93e8-db7507be7162"
+            "860981b1-ef1b-4b68-8241-a304a773b4aa"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3942,
+          "duration": 3800,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,7 +94,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "cypress/results",
+        "reportDir": "./cypress/results",
         "overwrite": false,
         "html": false,
         "json": true
